@@ -1,0 +1,305 @@
+$dark: #232323
+$red: #ff283c
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  outline: none
+
+body
+  color: $dark
+  font-family: 'pf_dindisplay_proregular', serif
+
+strong
+  font-family: 'pf_dindisplay_probold', serif
+
+a
+  text-decoration: none
+
+.uk-button-primary
+  background-color: transparent
+  border: 2px solid #fff
+  border-radius: 50px
+  line-height: 50px
+  font-size: 19.54px
+  font-family: 'pf_dindisplay_promedium', serif
+  color: #fff
+  padding: 0 35px
+  background-size: 100% 200%
+  background-image: linear-gradient(to bottom, transparent 50%, $red 50%)
+  transition: all 0.3s ease-in-out
+
+  &:hover
+    background-position: 0 100%
+    background-color: transparent
+    color: #fff
+    border: 2px solid $red
+
+.uk-button-danger
+  background-color: transparent
+  border: 2px solid $red
+  border-radius: 50px
+  line-height: 50px
+  font-size: 19.54px
+  font-family: 'pf_dindisplay_promedium', serif
+  color: $red
+  padding: 0 35px
+  background-size: 100% 200%
+  background-image: linear-gradient(to bottom, transparent 50%, $red 50%)
+  transition: all 0.3s ease-in-out
+
+  &:hover
+    background-position: 0 100%
+    background-color: transparent
+    color: #fff
+
+.uk-article-title
+  font-family: 'pf_dindisplay_prothin', serif
+  font-size: 42.4px
+
+.uk-article-lead
+  font-family: 'pf_dindisplay_prolight', serif
+  font-size: 16px
+
+.site-wrapper
+  max-width: 100%
+  overflow: hidden
+
+.section
+
+.title-text
+  font-family: 'pf_dindisplay_prothin', serif
+  font-size: 42.4px
+
+.header-section
+  height: 800px
+  +retina-bg('header-bg.jpg', 'header-bg@2x.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+  overflow: hidden
+
+  &::after
+    position: absolute
+    content: ''
+    bottom: -340px
+    left: 0
+    display: block
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 400px 0 0 10000px
+    border-color: transparent transparent transparent #fff
+
+  .header-top
+    position: relative
+    z-index: 1
+
+  .menu-btn
+    font-family: 'pf_dindisplay_probold', serif
+    font-size: 21px
+    color: #fff
+
+    &:hover
+      text-decoration: none
+
+  .header-info-cont
+    position: relative
+    z-index: 1
+
+  .header-info
+
+    .header-title-text
+      background: $red
+      color: #fff
+      position: relative
+      margin-top: 205px
+      padding: 27.5px 0 40px 0
+      letter-spacing: 0.6px
+
+      &::before
+        position: absolute
+        content: ''
+        top: -397px
+        left: 0
+        display: block
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 0 400px 10000px
+        border-color: transparent transparent $red transparent
+
+      &::after
+        position: absolute
+        content: ''
+        bottom: -200px
+        left: 0
+        display: block
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 10000px 200px 0
+        border-color: transparent $red transparent transparent
+
+    .header-info-list
+
+      li, p
+        font-size: 16px
+        color: #fff
+        font-family: 'pf_dindisplay_prothin_italic', serif
+
+.logo
+  +retina-bg('logo.png', 'logo@2x.png', 'autosize')
+
+.members-section
+
+  .uk-slidenav-contrast
+    color: $dark
+
+    &.uk-slidenav-previous
+      left: -25px
+
+    &.uk-slidenav-next
+      right: -25px
+
+  .uk-article
+    width: 70%
+    margin: 0 auto
+
+    .uk-article-title
+
+      img
+        max-width: 175px
+
+    .uk-article-meta
+      font-size: 12px
+      font-family: 'pf_dindisplay_prolight', serif
+      color: $dark
+
+    .uk-article-lead
+      font-family: 'pf_dindisplay_prothin_italic', serif
+      font-size: 14px
+      color: $dark
+
+.journal-section
+  position: relative
+  z-index: 1
+
+.footer-section
+  position: relative
+  background: $dark
+  padding-top: 10px
+
+  &::before
+    position: absolute
+    content: ''
+    top: -400px
+    left: 0
+    display: block
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 0 400px 10000px
+    border-color: transparent transparent $dark transparent
+
+
+//.site-wrapper
+//  min-width: 320px
+//  overflow: hidden
+//
+//.container
+//  max-width: 1200px
+//  margin: 0 auto
+//
+//.triangle-bottom-left
+//  position: relative
+//  overflow: hidden
+//  width: 100%
+//
+//  &::after
+//    position: absolute
+//    content: ''
+//    bottom: -350px
+//    left: 0
+//    display: block
+//    width: 0
+//    height: 0
+//    border-style: solid
+//    border-width: 400px 0 0 10000px
+//    border-color: transparent transparent transparent #fff
+//
+//.small-title
+//  font-size: 21px
+//  font-weight: 600
+//
+//.b-header
+//  height: 800px
+//  +retina-bg('header-bg.jpg', 'header-bg@2x.jpg')
+//  background-size: cover
+//  background-repeat: no-repeat
+//  position: relative
+//
+//.b-header__top
+//
+//  &.header-top
+//    position: absolute
+//    top: 0
+//
+//    .header-top__block
+//      padding: 35px 20px
+//      border-right: 1px solid #fff
+//      font-family: 'pf_dindisplay_probold'
+//
+//      &:last-child
+//        border-right: none
+//
+//      .menu-btn
+//        display: inline-block
+//        margin-left: 12px
+//        letter-spacing: 0
+//
+//.logo
+//  +retina-bg('logo.png', 'logo@2x.png', 'autosize')
+//  margin-top: 1px
+//
+//.b-header__info
+//
+//  &.header-info
+//
+//  .header-info__title
+//    font-size: 42px
+//    background: $red
+//    color: #fff
+//    position: relative
+//    margin-top: 205px
+//    padding: 27.5px 0 40px 0
+//    font-family: 'pf_dindisplay_prothin'
+//    letter-spacing: 0.6px
+//
+//    &::before
+//      position: absolute
+//      content: ''
+//      top: -397px
+//      left: 0
+//      display: block
+//      width: 0
+//      height: 0
+//      border-style: solid
+//      border-width: 0 0 400px 10000px
+//      border-color: transparent transparent $red transparent
+//
+//    &::after
+//      position: absolute
+//      content: ''
+//      bottom: -200px
+//      left: 0
+//      display: block
+//      width: 0
+//      height: 0
+//      border-style: solid
+//      border-width: 0 10000px 200px 0
+//      border-color: transparent $red transparent transparent
+
+
+
