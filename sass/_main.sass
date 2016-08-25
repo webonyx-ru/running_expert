@@ -64,6 +64,9 @@ a
   font-family: 'pf_dindisplay_prolight', serif
   font-size: 16px
 
+.uk-panel-box
+  background: #f8f8f8
+
 .site-wrapper
   max-width: 100%
   overflow: hidden
@@ -80,12 +83,20 @@ a
   padding: 0 15px
 
 .header-section
-  height: 807px
+  max-height: 170px
+  padding-bottom: 150px
   +retina-bg('header-bg.jpg', 'header-bg@2x.jpg')
   background-size: cover
   background-repeat: no-repeat
   position: relative
   overflow: hidden
+  transition: all 0.4s ease-in-out
+
+  &.header-big
+    max-height: 807px!important
+
+  &.header-active
+    max-height: 807px
 
   &::after
     position: absolute
@@ -126,12 +137,11 @@ a
         height: 3000px
         z-index: 6
 
-        .navigation-info
-          padding: 35px 14px
-          background: #fff
+        .navigation-info-wrap
           position: relative
-          height: 100%
           width: 100%
+          background: #fff
+          height: 100%
 
           &::before
             position: absolute
@@ -152,6 +162,11 @@ a
             height: 100%
             top: 0
             right: -21px
+
+        .navigation-info
+          padding: 35px 14px
+          width: 100%
+          height: auto
 
         .navigation-title
           font-family: 'pf_dindisplay_probold', serif
@@ -570,3 +585,155 @@ a
     a
       display: inline-block
       margin: 0 3px
+
+#mobile-nav
+
+  .logo
+    margin: 15px 0
+
+  .uk-offcanvas-bar
+    background: #232323
+    padding: 0 15px
+
+  .mobile-nav-title
+    margin: 10px 0
+    font-size: 21px
+    color: $red
+
+  .uk-list
+    margin-left: 10px
+    li
+      a
+        font-size: 16px
+        text-decoration: none
+        line-height: 25px
+        color: #fff
+
+        &:hover
+          color: $red
+
+.uk-form input:not([type]),
+.uk-form input[type=text],
+.uk-form input[type=password],
+.uk-form input[type=email],
+.uk-form input[type=url],
+.uk-form input[type=search],
+.uk-form input[type=tel],
+.uk-form input[type=number],
+.uk-form input[type=datetime],
+.uk-form input[type=datetime-local],
+.uk-form input[type=date],
+.uk-form input[type=month],
+.uk-form input[type=time],
+.uk-form input[type=week],
+.uk-form input[type=color],
+.uk-form select,
+.uk-form textarea
+  background: #f8f8f8
+  font-family: 'pf_dindisplay_prolight', serif
+  color: #a7a7a7
+
+.content-section
+  padding: 0
+  position: relative
+  z-index: 2
+
+  .uk-form input:not([type]),
+  .uk-form input[type=text],
+  .uk-form input[type=password],
+  .uk-form input[type=email],
+  .uk-form input[type=url],
+  .uk-form input[type=search],
+  .uk-form input[type=tel],
+  .uk-form input[type=number],
+  .uk-form input[type=datetime],
+  .uk-form input[type=datetime-local],
+  .uk-form input[type=date],
+  .uk-form input[type=month],
+  .uk-form input[type=time],
+  .uk-form input[type=week],
+  .uk-form input[type=color],
+  .uk-form select,
+  .uk-form textarea
+    max-width: 480px
+    width: 100%
+    min-width: 300px
+
+.team-article
+
+  @media only screen and (max-width : 767px)
+    text-align: center
+
+  .article-ava
+    float: left
+    width: 30%
+
+
+    @media only screen and (max-width : 767px)
+      width: 100%
+
+      img
+        max-width: 50%
+
+  .article-info
+    width: 70%
+    float: right
+    padding: 10px 0 0 20px
+
+    @media only screen and (max-width : 767px)
+      width: 100%
+      padding: 20px 0
+
+.pricelist-section
+  padding: 50px 0
+
+.price-list-bg
+  +retina-bg('pricelist-bg.jpg', 'pricelist-bg@2x.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+  z-index: 1
+
+  .pricelist-img
+    margin-top: 50px
+
+  .pricelist-title-wrap
+    margin: 20px 0
+
+    .pricelist-title
+      color: #fff
+      background: $red
+      display: inline-block
+      line-height: 48px
+      padding: 0 15px
+
+  .pricelist-info
+    color: #fff
+    font-size: 21px
+
+.pricelist-article
+  padding: 0 30px 40px 30px
+  box-shadow: 0 0 20px rgba(0,0,0,.2)
+
+  .icon-block
+    height: 200px
+    line-height: 200px
+    text-align: center
+
+.category-section
+  padding: 50px 0 100px 0
+
+  .title-text
+    padding: 0
+
+    @media only screen and (max-width : 767px)
+      padding: 0 15px
+
+  .uk-article-title
+    img
+      width: 100%
+
+  .uk-article-lead
+    margin: 10px 0
+    font-family: 'pf_dindisplay_promedium', serif
+    font-size: 21px
