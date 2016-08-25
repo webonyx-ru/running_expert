@@ -55,6 +55,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+.-line-up-20 {
+  line-height: 20px;
+}
+
 .-font-red {
   color: #ff283c;
 }
@@ -642,6 +646,59 @@ a {
   text-decoration: none;
 }
 
+.link {
+  color: #ff283c;
+  text-decoration: underline;
+}
+.link:hover {
+  color: #ff283c;
+}
+
+.uk-table tbody tr td span {
+  color: #ff283c;
+}
+.uk-table tbody:not(.table-info) tr:hover {
+  background: #ff283c;
+}
+.uk-table tbody:not(.table-info) tr:hover td {
+  color: #fff;
+}
+.uk-table tbody:not(.table-info) tr:hover td span {
+  color: #fff;
+}
+.uk-table tbody.table-info {
+  background: #f8f8f8;
+}
+.uk-table tbody.table-info tr td {
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+.uk-table tbody.table-info tr:not(.table-info-full) td {
+  font-family: "pf_dindisplay_promedium", serif;
+  line-height: 40px;
+}
+.uk-table tbody.table-info tr:hover {
+  background: #f8f8f8;
+}
+.uk-table tbody.table-info tr:hover td {
+  color: #232323;
+}
+.uk-table tbody.table-info tr:hover td span {
+  color: #ff283c;
+}
+.uk-table th, .uk-table td {
+  line-height: 50px;
+  padding: 0 15px;
+  font-family: "pf_dindisplay_prolight", serif;
+  font-size: 14px;
+}
+.uk-table thead tr {
+  background: #f8f8f8;
+}
+.uk-table thead tr th {
+  font-family: "pf_dindisplay_proregular", serif;
+}
+
 .uk-button {
   font-family: "pf_dindisplay_prolight", serif;
   padding: 0 25px;
@@ -717,6 +774,19 @@ a {
   font-family: "pf_dindisplay_prothin", serif;
   font-size: 42.4px;
   padding: 0 15px;
+}
+
+.title-text-smaller {
+  font-family: "pf_dindisplay_prothin", serif;
+  font-size: 32px;
+  padding: 0;
+}
+
+.title-text-small {
+  color: #797979;
+  font-size: 21px;
+  line-height: 30px;
+  font-family: "pf_dindisplay_prothin", serif;
 }
 
 .header-section {
@@ -1419,11 +1489,6 @@ a {
 .category-section .title-text {
   padding: 0;
 }
-@media only screen and (max-width: 767px) {
-  .category-section .title-text {
-    padding: 0 15px;
-  }
-}
 
 .article-grid .uk-article-title img {
   width: 100%;
@@ -1432,4 +1497,38 @@ a {
   margin: 10px 0;
   font-family: "pf_dindisplay_promedium", serif;
   font-size: 21px;
+}
+
+.single-page-section {
+  padding: 50px 0 100px 0;
+}
+.single-page-section .title-text {
+  padding: 0;
+}
+
+.uk-modal .uk-form {
+  padding: 15px;
+  display: block;
+  width: 100%;
+}
+.uk-modal .uk-form input:not([type]),
+.uk-modal .uk-form input[type=text],
+.uk-modal .uk-form input[type=password],
+.uk-modal .uk-form input[type=email],
+.uk-modal .uk-form input[type=url],
+.uk-modal .uk-form input[type=search],
+.uk-modal .uk-form input[type=tel],
+.uk-modal .uk-form input[type=number],
+.uk-modal .uk-form input[type=datetime],
+.uk-modal .uk-form input[type=datetime-local],
+.uk-modal .uk-form input[type=date],
+.uk-modal .uk-form input[type=month],
+.uk-modal .uk-form input[type=time],
+.uk-modal .uk-form input[type=week],
+.uk-modal .uk-form input[type=color],
+.uk-modal .uk-form select,
+.uk-modal .uk-form textarea {
+  display: block !important;
+  width: 100% !important;
+  height: 40px;
 }

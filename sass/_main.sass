@@ -17,6 +17,65 @@ strong
 a
   text-decoration: none
 
+.link
+  color: $red
+  text-decoration: underline
+
+  &:hover
+    color: $red
+
+.uk-table
+  tbody
+    tr
+      td
+        span
+          color: $red
+    &:not(.table-info)
+      tr
+        &:hover
+          background: $red
+
+          td
+            color: #fff
+            span
+              color: #fff
+
+    &.table-info
+      background: #f8f8f8
+
+      tr
+        td
+          line-height: 20px
+          padding-bottom: 10px
+
+        &:not(.table-info-full)
+          td
+            font-family: 'pf_dindisplay_promedium', serif
+            line-height: 40px
+
+        &:hover
+          background: #f8f8f8
+
+          td
+            color: $dark
+            span
+              color: $red
+
+
+  th, td
+    line-height: 50px
+    padding: 0 15px
+    font-family: 'pf_dindisplay_prolight', serif
+    font-size: 14px
+
+  thead
+    tr
+      background: #f8f8f8
+
+
+      th
+        font-family: 'pf_dindisplay_proregular', serif
+
 .uk-button
   font-family: 'pf_dindisplay_prolight', serif
   padding: 0 25px
@@ -81,6 +140,17 @@ a
   font-family: 'pf_dindisplay_prothin', serif
   font-size: 42.4px
   padding: 0 15px
+
+.title-text-smaller
+  font-family: 'pf_dindisplay_prothin', serif
+  font-size: 32px
+  padding: 0
+
+.title-text-small
+  color: #797979
+  font-size: 21px
+  line-height: 30px
+  font-family: 'pf_dindisplay_prothin', serif
 
 .header-section
   max-height: 170px
@@ -726,9 +796,6 @@ a
   .title-text
     padding: 0
 
-    @media only screen and (max-width : 767px)
-      padding: 0 15px
-
 .article-grid
   .uk-article-title
     img
@@ -738,3 +805,39 @@ a
     margin: 10px 0
     font-family: 'pf_dindisplay_promedium', serif
     font-size: 21px
+
+.single-page-section
+  padding: 50px 0 100px 0
+
+  .title-text
+    padding: 0
+
+.uk-modal
+
+  .uk-form
+    padding: 15px
+    display: block
+    width: 100%
+
+  .uk-form input:not([type]),
+  .uk-form input[type=text],
+  .uk-form input[type=password],
+  .uk-form input[type=email],
+  .uk-form input[type=url],
+  .uk-form input[type=search],
+  .uk-form input[type=tel],
+  .uk-form input[type=number],
+  .uk-form input[type=datetime],
+  .uk-form input[type=datetime-local],
+  .uk-form input[type=date],
+  .uk-form input[type=month],
+  .uk-form input[type=time],
+  .uk-form input[type=week],
+  .uk-form input[type=color],
+  .uk-form select,
+  .uk-form textarea
+    display: block!important
+    width: 100%!important
+    height: 40px
+
+
