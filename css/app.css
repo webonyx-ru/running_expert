@@ -1532,3 +1532,9 @@ a {
   width: 100% !important;
   height: 40px;
 }
+
+.page-title-lined {
+  background: #ff283c;
+  color: #fff;
+  position: relative;
+}
