@@ -1424,10 +1424,11 @@ a {
     padding: 0 15px;
   }
 }
-.category-section .uk-article-title img {
+
+.article-grid .uk-article-title img {
   width: 100%;
 }
-.category-section .uk-article-lead {
+.article-grid .uk-article-lead {
   margin: 10px 0;
   font-family: "pf_dindisplay_promedium", serif;
   font-size: 21px;
