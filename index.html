@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title goes here...</title>
 
     <!-- Stylesheets -->
@@ -20,12 +21,87 @@
                 <section class="header-top uk-grid uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4">
                     <article>
                         <a href="#" class="logo"></a>
+                        <a href="#" class="uk-float-right uk-visible-small mobile-nav-btn"><i class="fri fri-bars"></i></a>
                     </article>
-                    <article>
-                        <a href="#" class="menu-btn">Клуб</a>
+                    <article class="uk-visible-large">
+                        <div class="header-nav">
+                            <a href="#club-menu" class="menu-btn">Клуб</a>
+                            <div id="club-menu" class="navigation">
+                                <div class="navigation-info">
+                                    <p class="navigation-title">Клуб <a href="#" class="menu-popup-close uk-float-right"><i class="fri fri-exit"></i></a></p>
+                                    <div class="navigation-list">
+                                        <ul class="uk-list">
+                                            <li><a href="#">О нас</a></li>
+                                            <li><a href="#">Руководство</a></li>
+                                            <li><a href="#">Клубное членство</a></li>
+                                            <li><a href="#">Тренировочные программы</a></li>
+                                            <li><a href="#">Наши спортсмены</a></li>
+                                            <li><a href="#">Новости клуба</a></li>
+                                            <li><a href="#">Мы в СМИ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </article>
-                    <article>
-                        <a href="#" class="menu-btn">Журнал</a>
+                    <article class="uk-visible-large">
+                        <div class="header-nav">
+                            <a href="#journal-menu" class="menu-btn">Журнал</a>
+                            <div id="journal-menu" class="navigation">
+                                <div class="navigation-info">
+                                    <p class="navigation-title">Журнал <a href="#" class="menu-popup-close uk-float-right"><i class="fri fri-exit"></i></a></p>
+                                    <div class="navigation-list">
+                                        <ul class="uk-list">
+                                            <li><a href="#">Тренерская мысль</a></li>
+                                            <li><a href="#">Правила бега</a></li>
+                                            <li><a href="#">В здоровом теле</a></li>
+                                            <li><a href="#">Непростые вещи</a></li>
+                                            <li><a href="#">Стартовая линия</a></li>
+                                            <li><a href="#">Азбука бегуна</a></li>
+                                            <li><a href="#">Видео</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="uk-hidden-small">
+                        <div class="header-nav uk-text-right">
+                            <a href="#main-menu" class="main-menu-btn"><i class="fri fri-bars"></i></a>
+                            <div id="main-menu" class="navigation">
+                                <div class="navigation-info uk-text-left">
+                                    <a href="#" class="menu-popup-close uk-float-right"><i class="fri fri-exit"></i></a>
+                                    <div class="navigation-list navigation-small">
+                                        <p class="navigation-title">Клуб</p>
+                                        <ul class="uk-list">
+                                            <li><a href="#">О нас</a></li>
+                                            <li><a href="#">Руководство</a></li>
+                                            <li><a href="#">Клубное членство</a></li>
+                                            <li><a href="#">Тренировочные программы</a></li>
+                                            <li><a href="#">Наши спортсмены</a></li>
+                                            <li><a href="#">Новости клуба</a></li>
+                                            <li><a href="#">Мы в СМИ</a></li>
+                                        </ul>
+                                    </div>
+                                    <hr>
+                                    <div class="navigation-list navigation-small">
+                                        <p class="navigation-title">Журнал</p>
+                                        <ul class="uk-list">
+                                            <li><a href="#">Тренерская мысль</a></li>
+                                            <li><a href="#">Правила бега</a></li>
+                                            <li><a href="#">В здоровом теле</a></li>
+                                            <li><a href="#">Непростые вещи</a></li>
+                                            <li><a href="#">Стартовая линия</a></li>
+                                            <li><a href="#">Азбука бегуна</a></li>
+                                            <li><a href="#">Видео</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="uk-text-center">
+                                        <a href="#" class="uk-button uk-button-danger">Вступить в клуб</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </article>
                 </section>
             </div>
@@ -33,37 +109,63 @@
                 <h2 class="header-title-text title-text uk-text-center">Возможно, лучший беговой клуб Москвы</h2>
                 <div class="header-info-cont">
                     <div class="uk-text-center">
-                        <a href="" class="uk-button uk-button-primary">Вступить в клуб</a>
+                        <a href="#" class="uk-button uk-button-primary uk-button-large">Вступить в клуб</a>
                     </div>
-                    <div class="uk-container uk-container-center">
-                        <ul class="header-info-list uk-text-center uk-grid uk-grid-large uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin>
-                            <li>
-                                <i class="fri fri-desktop"></i>
-                                <p><i>Научный подход к тренировкам</i></p>
-                            </li>
-                            <li>
-                                <i class="fri fri-heart"></i>
-                                <p><i>Строгий медицинский контроль</i></p>
-                            </li>
-                            <li>
-                                <i class="fri fri-awward"></i>
-                                <p><i>Гарантированный рост результатов</i></p>
-                            </li>
-                            <li>
-                                <i class="fri fri-book"></i>
-                                <p><i>Профессиональный журнал о беге</i></p>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="uk-container uk-container-center uk-visible-large">
+                    <ul class="header-info-list uk-text-center uk-grid uk-grid-large uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin data-uk-grid-match>
+                        <li>
+                            <div class="icon-block"><i class="fri fri-desktop"></i></div>
+                            <p><i>Научный подход <br>к тренировкам</i></p>
+                        </li>
+                        <li>
+                            <div class="icon-block"><i class="fri fri-heart"></i></div>
+                            <p><i>Строгий медицинский <br>контроль</i></p>
+                        </li>
+                        <li>
+                            <div class="icon-block"><i class="fri fri-awward"></i></div>
+                            <p><i>Гарантированный рост <br> результатов</i></p>
+                        </li>
+                        <li>
+                            <div class="icon-block"><i class="fri fri-book"></i></div>
+                            <p><i>Профессиональный <br>журнал о беге</i></p>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </header><!-- Header section end -->
 
+        <!-- Info section -->
+        <section class="info-section section uk-hidden-large">
+            <div class="uk-container uk-container-center">
+                <ul class="uk-text-center uk-grid uk-grid-large uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin data-uk-grid-match>
+                    <li>
+                        <div class="icon-block"><i class="fri fri-desktop-dark"></i></div>
+                        <p><i>Научный подход <br>к тренировкам</i></p>
+                    </li>
+                    <li>
+                        <div class="icon-block"><i class="fri fri-heart-dark"></i></div>
+                        <p><i>Строгий медицинский <br>контроль</i></p>
+                    </li>
+                    <li>
+                        <div class="icon-block"><i class="fri fri-awward-dark"></i></div>
+                        <p><i>Гарантированный рост <br> результатов</i></p>
+                    </li>
+                    <li>
+                        <div class="icon-block"><i class="fri fri-book-dark"></i></div>
+                        <p><i>Профессиональный <br>журнал о беге</i></p>
+                    </li>
+                </ul>
+            </div>
+        </section><!-- Info section end -->
+
+        <div class="uk-text-center uk-hidden-large"><i class="fri fri-devider-right"></i></div>
+
         <!-- About section -->
-        <section class="about-section">
+        <section class="about-section section">
             <div class="uk-container uk-container-center">
                 <div class="uk-grid uk-grid-width-small-1-1 uk-grid-width-medium-1-2" data-uk-grid-margin>
-                    <div>
+                    <div class="about-ava">
                         <img src="images/golovkin.jpg" alt="">
                     </div>
                     <div>
@@ -71,21 +173,26 @@
                             <h2 class="uk-article-title">Александр Головин, <br>главный тренер:</h2>
                             <p class="uk-article-meta"><i class="fri fri-comma"></i></p>
                             <p class="uk-article-lead">
-                                Я родился и вырос в городе, где не было ни одного тренера <br>
-                                по марафонскому бегу. С одной стороны, мне не повезло — порой приходилось, что называется, изобретать велосипед. <br>
-                                С другой стороны, это заставило глубоко изучать физиологические аспекты тренировочного процесса, много экспериментировать (зачастую во вред своему же здоровью) <br>
-                                и, в конечном итоге, выработать систему, эффективность которой порой удивляла меня самого. <br>
+                                Я родился и вырос в городе, где не было ни одного тренера
+                                по марафонскому бегу. С одной стороны, мне не повезло — порой приходилось, что называется, изобретать велосипед.
+                                С другой стороны, это заставило глубоко изучать физиологические аспекты тренировочного процесса, много экспериментировать
+                                (зачастую во вред своему же здоровью)и, в конечном итоге, выработать систему, эффективность
+                                которой порой удивляла меня самого. <br><br>
                                 ...
                             </p>
-                            <a href="#" class="uk-button uk-button-danger">Читайте мой блог</a>
+                            <div class="read-my-blog-wrap">
+                                <a href="#" class="read-my-blog uk-button uk-button-danger">Читайте мой блог</a>
+                            </div>
                         </article>
                     </div>
                 </div>
             </div>
         </section><!-- About section end -->
 
+        <div class="uk-text-center"><i class="fri fri-devider-left"></i></div>
+
         <!-- Care section -->
-        <section class="about-section">
+        <section class="care-section section">
             <div class="uk-container uk-container-center">
                 <div class="uk-grid uk-grid-width-small-1-1 uk-grid-width-medium-1-2" data-uk-grid-margin>
                     <div>
@@ -93,9 +200,10 @@
                             <h2 class="uk-article-title">Мы заботимся <br>о здоровьи наших участников:</h2>
                             <div class="uk-article-lead">
                                 Напоминаем, что 20 июня состоится первая лекция <br>
-                                «Готов ли ваш организм к дистанции 42,2 км?» в рамках цикла «Биохимия марафонского бега», организатором которого является беговой клуб Running Expert <br>
-                                в партнерстве с Лаборатория KDL. <br>
-                                Главный тренер клуба Alexander Golovin и специалисты лаборатории ответят на вопросы, которые волнуют каждого любителя бега:
+                                «Готов ли ваш организм к дистанции 42,2 км?» в рамках <br>цикла «Биохимия марафонского бега», организатором
+                                <br> которого является беговой клуб Running Expert <br>в партнерстве с Лаборатория KDL. <br> <br>
+                                Главный тренер клуба Alexander Golovin и специалисты <br> лаборатории ответят на вопросы, которые волнуют каждого
+                                <br> любителя бега:
                                 <ul class="uk-list">
                                     <li>
                                         какое именно обследование состояния здоровья требуется
@@ -106,23 +214,28 @@
                                         у бегунов-любителей
                                     </li>
                                 </ul>
+                                <br>
                                 ...
                             </div>
-                            <a href="#" class="uk-button uk-button-danger">Узнать больше</a>
+                            <div class="read-more-wrap">
+                                <a href="#" class="read-more uk-button uk-button-danger">Узнать больше</a>
+                            </div>
                         </article>
                     </div>
-                    <div>
+                    <div class="care-section-img">
                         <img src="images/cart.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section><!-- Care section end -->
 
+        <div class="uk-text-center"><i class="fri fri-devider-right"></i></div>
+
         <!-- Members section -->
-        <section class="members-section">
+        <section class="members-section section">
             <h2 class="title-text uk-text-center">Участники Running Expert</h2>
             <div class="uk-container uk-container-center">
-                <div class="uk-slidenav-position" data-uk-slider>
+                <div class="members-section-slider uk-slidenav-position" data-uk-slider>
                     <div class="uk-slider-container">
                         <ul class="uk-slider uk-grid-width-medium-1-3">
                             <li>
@@ -135,10 +248,9 @@
                                         35 лет, бизнессмен, в клубе с 2010 (3:23:15). <br>
                                         Результат 2016 — 2:58:18
                                     </p>
-                                    <i class="fri fri-comma"></i>
+                                    <div class="article-devider"><i class="fri fri-comma"></i></div>
                                     <p class="uk-article-lead">
-                                        Предсоревновательную разминку под палящим питерским солнцем и стало ясно, что завтра нас ждет настоящее испытание.
-                                        <br> <br>
+                                        Предсоревновательную разминку под <br>палящим питерским солнцем и стало ясно, что завтра нас ждет настоящее испытание. <br> <br>
                                         Пейте чаще и всем легких ног!
                                     </p>
                                 </article>
@@ -153,11 +265,9 @@
                                         35 лет, бизнессмен, в клубе с 2010 (3:23:15). <br>
                                         Результат 2016 — 2:58:18
                                     </p>
-                                    <i class="fri fri-comma"></i>
+                                    <div class="article-devider"><i class="fri fri-comma"></i></div>
                                     <p class="uk-article-lead">
-                                        Предсоревновательную разминку под палящим питерским солнцем и стало ясно, что завтра нас ждет настоящее испытание.
-                                        <br> <br>
-                                        Пейте чаще и всем легких ног!
+                                        Группа подготовки к Ergo WHITE NIGHTS <br> Marathon провела предсоревновательную разминку под палящим ...
                                     </p>
                                 </article>
                             </li>
@@ -171,11 +281,9 @@
                                         35 лет, бизнессмен, в клубе с 2010 (3:23:15). <br>
                                         Результат 2016 — 2:58:18
                                     </p>
-                                    <i class="fri fri-comma"></i>
+                                    <div class="article-devider"><i class="fri fri-comma"></i></div>
                                     <p class="uk-article-lead">
-                                        Предсоревновательную разминку под палящим питерским солнцем и стало ясно, что завтра нас ждет настоящее испытание.
-                                        <br> <br>
-                                        Пейте чаще и всем легких ног!
+                                        Группа подготовки к Ergo WHITE NIGHTS Marathon провела предсоревновательную разминку под палящим питерским солнцем и стало ясно ...
                                     </p>
                                 </article>
                             </li>
@@ -184,61 +292,89 @@
                     <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slider-item="previous"></a>
                     <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slider-item="next"></a>
                 </div>
+                <div class="more-reviews uk-text-center">
+                    <a href="#" class="uk-button uk-button-danger">Отзывы участников</a>
+                </div>
             </div>
         </section><!-- Members section end -->
 
+        <div class="uk-text-center"><i class="fri fri-devider-left"></i></div>
+
         <!-- Journal section -->
-        <section class="journal-section">
+        <section class="journal-section section">
             <h2 class="title-text uk-text-center">Журнал</h2>
             <div class="uk-container uk-container-center">
-                <div class="uk-grid uk-grid-large uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-margin data-uk-grid-match>
+                <div class="journal-sections-articles uk-grid uk-grid-small uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-margin data-uk-grid-match>
                     <div>
                         <article class="uk-article">
-                            <h2 class="uk-article-title"><img src="http://placehold.it/255x175" alt=""></h2>
-                            <p class="article-small-info">Тренерская мысль</p>
+                            <h2 class="uk-article-title">
+                                <img src="http://placehold.it/255x175" alt="">
+                                <p class="article-small-info uk-hidden-small">Тренерская мысль</p>
+                            </h2>
                             <p class="uk-article-lead">Где пределы наших возможностей? Цикл лекций «Биохимия марафонского бега»</p>
                         </article>
                     </div>
                     <div>
                         <article class="uk-article">
-                            <h2 class="uk-article-title"><img src="http://placehold.it/255x175" alt=""></h2>
-                            <p class="article-small-info">Правила бега</p>
+                            <h2 class="uk-article-title">
+                                <img src="http://placehold.it/255x175" alt="">
+                                <p class="article-small-info uk-hidden-small">Правила бега</p>
+                            </h2>
                             <p class="uk-article-lead">Готов ли ваш организм к дистанции 42,2 км?</p>
                             <p class="uk-article-meta">Ergo WHITE NIGHTS Marathon провела предсоревновательную разминку</p>
                         </article>
                     </div>
                     <div>
                         <article class="uk-article">
-                            <h2 class="uk-article-title"><img src="http://placehold.it/255x175" alt=""></h2>
-                            <p class="article-small-info">В здоровом теле</p>
+                            <h2 class="uk-article-title">
+                                <img src="http://placehold.it/255x175" alt="">
+                                <p class="article-small-info uk-hidden-small">В здоровом теле</p>
+                            </h2>
                             <p class="uk-article-lead">Как наметить путь к рекордам</p>
                             <p class="uk-article-meta">Ergo WHITE NIGHTS Marathon</p>
                         </article>
                     </div>
                     <div>
                         <article class="uk-article">
-                            <h2 class="uk-article-title"><img src="http://placehold.it/255x175" alt=""></h2>
-                            <p class="article-small-info">Непростые вещи</p>
+                            <h2 class="uk-article-title">
+                                <img src="http://placehold.it/255x175" alt="">
+                                <p class="article-small-info uk-hidden-small">Непростые вещи</p>
+                            </h2>
                             <p class="uk-article-lead">Немного полезной информации для бегунов</p>
                         </article>
                     </div>
                     <div>
                         <article class="uk-article">
-                            <h2 class="uk-article-title"><img src="http://placehold.it/255x175" alt=""></h2>
-                            <p class="article-small-info">Непростые вещи</p>
+                            <h2 class="uk-article-title">
+                                <img src="http://placehold.it/255x175" alt="">
+                                <p class="article-small-info uk-hidden-small">Непростые вещи</p>
+                            </h2>
                             <p class="uk-article-lead">Немного полезной информации для бегунов</p>
                         </article>
                     </div>
                     <div>
                         <article class="uk-article">
-                            <h2 class="uk-article-title"><img src="http://placehold.it/255x175" alt=""></h2>
-                            <p class="article-small-info">Азбука бегуна</p>
+                            <h2 class="uk-article-title">
+                                <img src="http://placehold.it/255x175" alt="">
+                                <p class="article-small-info uk-hidden-small">Азбука бегуна</p>
+                            </h2>
                             <p class="uk-article-lead">Volkswagen Prague Marathon-2016 by RunCzech</p>
                         </article>
                     </div>
                 </div>
-                <div class="uk-text-center">
-                    <a href="#" class="uk-button uk-button-danger">Читать журнал</a>
+                <div class="uk-text-center -relative" data-uk-dropdown="{mode:'click', pos:'top-center'}">
+                    <a href="#" class="read-more uk-button uk-button-danger">Читать журнал</a>
+                    <div class="journal-dropdown uk-dropdown uk-text-center">
+                        <h4 class="dropdown-title">Выберите рубрику</h4>
+                        <ul class="uk-list">
+                            <li><a href="#">Тренерская мысль</a></li>
+                            <li><a href="#">Правила бега</a></li>
+                            <li><a href="#">В здоровом теле</a></li>
+                            <li><a href="#">Непростые вещи</a></li>
+                            <li><a href="#">Стартовая линия</a></li>
+                            <li><a href="#">Азбука бегуна</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section><!-- Journal section end -->
@@ -246,19 +382,21 @@
         <!-- Footer section -->
         <footer class="footer-section -margin-top-60">
             <div class="uk-container uk-container-center">
-                <div class="uk-grid uk-grid-width-small-1-1 uk-grid-width-medium-1-2" data-uk-grid-margin>
-                    <div class="clearfix">
-                        <p>
-                            <img src="images/logo.png" alt="">
-                            <span>&copy; © Running Exper, 2016</span>
-                        </p>
-                        <nav class="footer-nav">
-                            <a href="#">Условия цитирования</a>
-                            <a href="#">Карта сайта</a>
-                            <a href="#">Контакты</a>
-                        </nav>
+                <div class="uk-grid" data-uk-grid-margin data-uk-grid-match>
+                    <div class="uk-width-small-1-1 uk-width-medium-2-3 uk-width-large-2-3">
+                        <div class="footer-info-wrap">
+                            <p class="footer-info uk-clearfix">
+                                <a href="#" class="logo-footer"></a>
+                                <span class="footer-info-text">&copy; Running Exper, 2016</span>
+                            </p>
+                            <nav class="footer-nav uk-hidden-small">
+                                <a href="#">Условия цитирования</a>
+                                <a href="#">Карта сайта</a>
+                                <a href="#">Контакты</a>
+                            </nav>
+                        </div>
                     </div>
-                    <div class="footer-socials uk-text-right">
+                    <div class="footer-socials uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-3 footer-socials uk-text-right">
                         <a href="#"><i class="fri fri-facebook"></i></a>
                         <a href="#"><i class="fri fri-twitter"></i></a>
                         <a href="#"><i class="fri fri-vk"></i></a>
@@ -273,7 +411,5 @@
     <script src="bower_components/uikit/js/uikit.min.js"></script>
     <script src="bower_components/uikit/js/components/slider.min.js"></script>
     <script src="js/app.js"></script>
-
-    <!--<script src="PP/PP.js"></script>-->
 </body>
 </html>
