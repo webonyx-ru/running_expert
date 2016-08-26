@@ -820,6 +820,7 @@ a {
 }
 .header-section.header-active {
   max-height: 807px;
+  min-height: 807px;
 }
 .header-section::after {
   position: absolute;
