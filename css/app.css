@@ -55,8 +55,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.-line-up-20 {
-  line-height: 20px;
+.-font-white {
+  color: #fff;
+}
+
+.-boxed {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.-line-up {
+  line-height: 1.5;
 }
 
 .-font-red {
@@ -824,6 +833,9 @@ a {
   border-width: 400px 0 0 10000px;
   border-color: transparent transparent transparent #fff;
 }
+.header-section.header-line-red::after {
+  border-color: transparent transparent transparent #ff283c;
+}
 .header-section .header-top {
   position: relative;
   z-index: 1;
@@ -1437,10 +1449,6 @@ a {
   }
 }
 
-.pricelist-section {
-  padding: 50px 0;
-}
-
 .price-list-bg {
   background-image: url('../images/pricelist-bg.jpg?1472115031');
   background-size: contain;
@@ -1483,10 +1491,7 @@ a {
   text-align: center;
 }
 
-.category-section {
-  padding: 50px 0 100px 0;
-}
-.category-section .title-text {
+.uk-container .title-text {
   padding: 0;
 }
 
@@ -1497,13 +1502,6 @@ a {
   margin: 10px 0;
   font-family: "pf_dindisplay_promedium", serif;
   font-size: 21px;
-}
-
-.single-page-section {
-  padding: 50px 0 100px 0;
-}
-.single-page-section .title-text {
-  padding: 0;
 }
 
 .uk-modal .uk-form {
@@ -1537,4 +1535,44 @@ a {
   background: #ff283c;
   color: #fff;
   position: relative;
+  padding: 0 0 60px 0;
+  overflow: hidden;
+}
+@media only screen and (max-width: 767px) {
+  .page-title-lined {
+    margin-top: -40px;
+  }
+}
+.page-title-lined h2 {
+  position: relative;
+  z-index: 2;
+}
+.page-title-lined::before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 400px 10000px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.uk-list.page-list li {
+  font-family: "pf_dindisplay_prolight", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 15px;
+  position: relative;
+}
+.uk-list.page-list li::before {
+  display: block;
+  content: "●";
+  position: absolute;
+  font-size: 10px;
+  top: 5px;
+  left: 0;
 }
