@@ -19,10 +19,11 @@ a
 
 .link
   color: $red
-  text-decoration: underline
+  text-decoration: none
 
   &:hover
     color: $red
+    text-decoration: underline
 
 .uk-table
   tbody
@@ -45,13 +46,13 @@ a
 
       tr
         td
-          line-height: 20px
+          line-height: 1.5
           padding-bottom: 10px
 
         &:not(.table-info-full)
           td
             font-family: 'pf_dindisplay_promedium', serif
-            line-height: 40px
+            line-height: 1.5
 
         &:hover
           background: #f8f8f8
@@ -63,8 +64,8 @@ a
 
 
   th, td
-    line-height: 50px
-    padding: 0 15px
+    line-height: 1.5
+    padding: 10px 15px
     font-family: 'pf_dindisplay_prolight', serif
     font-size: 14px
 
@@ -160,14 +161,13 @@ a
   background-repeat: no-repeat
   position: relative
   overflow: hidden
-  transition: all 0.4s ease-in-out
+  transition: max-height 0.4s ease-in-out
 
   &.header-big
     max-height: 807px!important
 
   &.header-active
     max-height: 807px
-    min-height: 807px
 
   &::after
     position: absolute
@@ -795,6 +795,8 @@ a
     text-align: center
 
 .uk-container
+  max-width: 1200px
+
   .title-text
     padding: 0
 
