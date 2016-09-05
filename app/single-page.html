@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title goes here...</title>
 
-    <!-- Stylesheets -->
+    <!--build:css css/vendor.css-->
+    <!--bower:css-->
     <link rel="stylesheet" href="bower_components/uikit/css/uikit.min.css">
     <link rel="stylesheet" href="bower_components/uikit/css/components/slider.min.css">
     <link rel="stylesheet" href="bower_components/uikit/css/components/slidenav.min.css">
+    <!--endbower-->
+    <!--endbuild-->
+
+    <!--build:css css/common.css-->
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/app.css">
+    <!--endbuild-->
+
 </head>
 <body>
 
@@ -74,7 +81,7 @@
                         <a href="#main-menu" class="main-menu-btn"><i class="fri fri-bars"></i></a>
                         <div id="main-menu" class="navigation">
                             <div class="navigation-info-wrap">
-                                <div class="navigation-info uk-text-left">
+                                <div class="navigation-info uk-text-left full-nav">
                                     <a href="#" class="menu-popup-close uk-float-right"><i class="fri fri-exit"></i></a>
                                     <div class="navigation-list navigation-small">
                                         <p class="navigation-title">Клуб</p>
@@ -393,10 +400,17 @@
 
 </div>
 
-<!-- Scripts -->
+<!--build:js js/vendor.js-->
+<!--bower:js-->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/uikit/js/uikit.min.js"></script>
 <script src="bower_components/uikit/js/components/slider.min.js"></script>
+<!--endbower-->
+<!--endbuild-->
+
+<!--build:css js/common.js-->
 <script src="js/app.js"></script>
+<!--endbuild-->
+
 </body>
 </html>

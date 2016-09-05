@@ -155,19 +155,21 @@ a
 
 .header-section
   max-height: 170px
+  min-height: 100px
   padding-bottom: 150px
   +retina-bg('header-bg.jpg', 'header-bg@2x.jpg')
   background-size: cover
   background-repeat: no-repeat
   position: relative
   overflow: hidden
-  transition: max-height 0.4s ease-in-out
+  transition: all 0.4s ease-in-out
 
   &.header-big
     max-height: 807px!important
 
   &.header-active
     max-height: 807px
+    min-height: 637px
 
   &::after
     position: absolute

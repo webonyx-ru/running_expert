@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    var globHeaderHeight = $('.header-section').outerHeight();
+
     $('.menu-btn, .main-menu-btn').click(function (event) {
         event.preventDefault();
 
@@ -8,15 +10,22 @@ $(document).ready(function () {
         $('.navigation').removeClass('active');
         headerSection.addClass('header-active');
 
-        if(!headerSection.hasClass('header-big')) {
-            var elementHeights = $('.navigation-info').map(function() {
-                return $(this).height();
-            }).get();
+        var maxHeight = $('.full-nav').outerHeight();
 
-            var maxHeight = Math.max.apply(null, elementHeights);
+        if(headerSection.hasClass('header-big') !== false) {
 
-            $('.header-active').height(maxHeight);
+            $('.header-active').css({
+                'min-height': maxHeight,
+                'max-height': 807
+            });
+        } else {
+
+            $('.header-section').css({
+                'min-height': maxHeight,
+                'max-height': 807
+            });
         }
+
 
         $(currentNav).addClass('active');
 
@@ -27,7 +36,10 @@ $(document).ready(function () {
         event.preventDefault();
 
         $('.navigation').removeClass('active');
-        $('.header-section').removeClass('header-active');
+        $('.header-section').removeClass('header-active').css({
+            'min-height': 100,
+            'max-height': globHeaderHeight
+        });
 
         return false;
     });
