@@ -803,7 +803,7 @@ a {
   max-height: 170px;
   min-height: 100px;
   padding-bottom: 150px;
-  background-image: url('../images/header-bg.jpg?1473032715');
+  background-image: url('../images/header-bg.jpg?1473162346');
   background-size: contain;
   background-size: 1200px 800px;
   background-size: cover;
@@ -814,7 +814,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .header-section {
-    background-image: url('../images/header-bg@2x.jpg?1473032715');
+    background-image: url('../images/header-bg@2x.jpg?1473162347');
   }
 }
 .header-section.header-big {
@@ -1018,7 +1018,7 @@ a {
 }
 
 .logo {
-  background-image: url('../images/logo.png?1473032715');
+  background-image: url('../images/logo.png?1473162347');
   background-size: contain;
   background-size: 137.5px 37px;
   width: 137.5px;
@@ -1028,7 +1028,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .logo {
-    background-image: url('../images/logo@2x.png?1473032715');
+    background-image: url('../images/logo@2x.png?1473162347');
   }
 }
 
@@ -1292,7 +1292,7 @@ a {
   float: left;
 }
 .footer-section .footer-info .logo-footer {
-  background-image: url('../images/logo-small.png?1473032715');
+  background-image: url('../images/logo-small.png?1473162347');
   background-size: contain;
   background-size: 19.5px 21px;
   width: 19.5px;
@@ -1302,7 +1302,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .footer-section .footer-info .logo-footer {
-    background-image: url('../images/logo-small@2x.png?1473032715');
+    background-image: url('../images/logo-small@2x.png?1473162347');
   }
 }
 .footer-section .footer-info .footer-info-text {
@@ -1453,7 +1453,7 @@ a {
 }
 
 .price-list-bg {
-  background-image: url('../images/pricelist-bg.jpg?1473032716');
+  background-image: url('../images/pricelist-bg.jpg?1473162347');
   background-size: contain;
   background-size: 1200px 668px;
   background-size: cover;
@@ -1463,7 +1463,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .price-list-bg {
-    background-image: url('../images/pricelist-bg@2x.jpg?1473032716');
+    background-image: url('../images/pricelist-bg@2x.jpg?1473162347');
   }
 }
 .price-list-bg .pricelist-img {
