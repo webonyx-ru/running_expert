@@ -833,8 +833,9 @@ a {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 400px 0 0 10000px;
+  border-width: 420px 0 0 10000px;
   border-color: transparent transparent transparent #fff;
+  z-index: 3;
 }
 .header-section.header-line-red::after {
   border-color: transparent transparent transparent #ff283c;
@@ -871,6 +872,7 @@ a {
   width: 100%;
   background: #fff;
   height: 100%;
+  z-index: 2;
 }
 .header-section .header-top .header-nav .navigation .navigation-info-wrap::before {
   position: absolute;

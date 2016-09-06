@@ -15,13 +15,13 @@ $(document).ready(function () {
         if(headerSection.hasClass('header-big') !== false) {
 
             $('.header-active').css({
-                'min-height': maxHeight,
+                'min-height': maxHeight + 50,
                 'max-height': 807
             });
         } else {
 
             $('.header-section').css({
-                'min-height': maxHeight,
+                'min-height': maxHeight + 50,
                 'max-height': 807
             });
         }
