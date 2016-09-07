@@ -797,6 +797,20 @@ a {
     background-image: url('../images/header-bg@2x.jpg?1473162347');
   }
 }
+.header-section .header-bg-blurred .uk-slidenav-position {
+  transition: all 0.7s ease-in-out;
+}
+.header-section .header-bg-blurred .uk-dotnav {
+  bottom: 90px !important;
+}
+.header-section .header-bg-blurred .uk-dotnav a {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}
+.header-section .header-bg-blurred .uk-dotnav .uk-active > a {
+  background: #ff283c;
+}
 .header-section.header-big {
   max-height: 807px !important;
 }

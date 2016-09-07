@@ -9,7 +9,9 @@
     <!--bower:css-->
     <link rel="stylesheet" href="bower_components/uikit/css/uikit.min.css">
     <link rel="stylesheet" href="bower_components/uikit/css/components/slider.min.css">
+    <link rel="stylesheet" href="bower_components/uikit/css/components/slideshow.min.css">
     <link rel="stylesheet" href="bower_components/uikit/css/components/slidenav.min.css">
+    <link rel="stylesheet" href="bower_components/uikit/css/components/dotnav.min.css">
     <!--endbower-->
     <!--endbuild-->
 
@@ -24,7 +26,18 @@
 <div class="site-wrapper">
     <!-- Header section -->
     <header class="header-section header-big price-list-bg">
-        <div class="header-bg-blurred"></div>
+        <div class="header-bg-blurred">
+            <div class="uk-slidenav-position" data-uk-slideshow>
+                <ul class="uk-slideshow">
+                    <li><img src="images/header-bg.jpg" alt=""></li>
+                    <li><img src="images/pricelist-bg.jpg" alt=""></li>
+                </ul>
+                <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                    <li data-uk-slideshow-item="0"><a href=""></a></li>
+                    <li data-uk-slideshow-item="1"><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
         <div class="uk-container uk-container-center">
             <section class="header-top uk-grid uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4">
                 <article>
@@ -237,6 +250,7 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/uikit/js/uikit.min.js"></script>
 <script src="bower_components/uikit/js/components/slider.min.js"></script>
+<script src="bower_components/uikit/js/components/slideshow.min.js"></script>
 <!--endbower-->
 <!--endbuild-->
 

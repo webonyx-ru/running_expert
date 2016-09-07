@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var headerSection = $('.header-section'),
-        globHeaderHeight = headerSection.outerHeight();
+        globHeaderHeight = headerSection.outerHeight(),
+        headerSlider = headerSection.find('.uk-slidenav-position');
 
     $(window).scroll(function () {
         var scrollTop = $(window).scrollTop();
@@ -10,6 +11,10 @@ $(document).ready(function () {
         } else {
             $('.header-bg-blurred').removeClass('make-blur');
         }
+    });
+
+    headerSlider.css({
+       'height':  globHeaderHeight
     });
 
 
@@ -29,6 +34,10 @@ $(document).ready(function () {
             $('.header-active').css({
                 'min-height': maxHeight + 50,
                 'max-height': 807
+            });
+
+            headerSlider.css({
+                'height':  maxHeight + 50
             });
 
         } else {
@@ -52,6 +61,10 @@ $(document).ready(function () {
         $('.header-section').removeClass('header-active').css({
             'min-height': 100,
             'max-height': globHeaderHeight
+        });
+
+        headerSlider.css({
+            'height':  globHeaderHeight
         });
 
         $('.header-wrapper-div').height(globHeaderHeight);
