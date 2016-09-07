@@ -664,51 +664,6 @@ a {
   text-decoration: underline;
 }
 
-.uk-table tbody tr td span {
-  color: #ff283c;
-}
-.uk-table tbody:not(.table-info) tr:hover {
-  background: #ff283c;
-}
-.uk-table tbody:not(.table-info) tr:hover td {
-  color: #fff;
-}
-.uk-table tbody:not(.table-info) tr:hover td span {
-  color: #fff;
-}
-.uk-table tbody.table-info {
-  background: #f8f8f8;
-}
-.uk-table tbody.table-info tr td {
-  line-height: 1.5;
-  padding-bottom: 10px;
-}
-.uk-table tbody.table-info tr:not(.table-info-full) td {
-  font-family: "pf_dindisplay_promedium", serif;
-  line-height: 1.5;
-}
-.uk-table tbody.table-info tr:hover {
-  background: #f8f8f8;
-}
-.uk-table tbody.table-info tr:hover td {
-  color: #232323;
-}
-.uk-table tbody.table-info tr:hover td span {
-  color: #ff283c;
-}
-.uk-table th, .uk-table td {
-  line-height: 1.5;
-  padding: 10px 15px;
-  font-family: "pf_dindisplay_prolight", serif;
-  font-size: 14px;
-}
-.uk-table thead tr {
-  background: #f8f8f8;
-}
-.uk-table thead tr th {
-  font-family: "pf_dindisplay_proregular", serif;
-}
-
 .uk-button {
   font-family: "pf_dindisplay_prolight", serif;
   padding: 0 25px;
@@ -769,6 +724,7 @@ a {
 .site-wrapper {
   max-width: 100%;
   overflow: hidden;
+  min-width: 320px;
 }
 
 .section {
@@ -1594,4 +1550,118 @@ a {
   font-size: 10px;
   top: 5px;
   left: 0;
+}
+
+.users-info-table ul {
+  font-size: 0;
+}
+.users-info-table ul li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  display: inline-block;
+  font-family: "pf_dindisplay_prolight", serif;
+  line-height: 1.5;
+  padding: 10px 15px;
+  width: 10%;
+}
+@media only screen and (max-width: 767px) {
+  .users-info-table ul li {
+    padding: 10px 15px 10px 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .users-info-table ul li {
+    width: 15%;
+  }
+}
+.users-info-table ul li .button-block {
+  text-align: right;
+}
+.users-info-table ul li .uk-button {
+  line-height: 30px;
+  font-size: 14.54px;
+}
+.users-info-table ul li.larger {
+  width: 20%;
+}
+@media only screen and (max-width: 959px) {
+  .users-info-table ul li.larger {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .users-info-table ul li.larger {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 767px) and (max-width: 480px) {
+  .users-info-table ul li.larger {
+    width: 42.5%;
+  }
+}
+@media only screen and (max-width: 767px) and (max-width: 420px) {
+  .users-info-table ul li.larger {
+    width: 50%;
+  }
+}
+
+.users-info-table ul li.description {
+  width: 100%;
+  padding-left: 10%;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+.users-info-table ul li.description > .toggled-info {
+  margin-left: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .users-info-table ul li.description > .toggled-info {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .users-info-table ul li.description {
+    padding-left: 15%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .users-info-table ul li.description {
+    padding-left: 0;
+  }
+}
+.users-info-table ul li.description .description-small {
+  font-size: 0;
+}
+.users-info-table ul li.description .description-small p {
+  font-size: 14px;
+  margin: 5px 0;
+  width: 50%;
+  display: inline-block;
+}
+@media only screen and (max-width: 480px) {
+  .users-info-table ul li.description .description-small p {
+    width: 100%;
+  }
+}
+.users-info-table ul.user-info-header li {
+  font-family: "pf_dindisplay_probold", serif;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 420px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+.visible-xs {
+  display: none !important;
+}
+@media only screen and (max-width: 420px) {
+  .visible-xs {
+    display: block !important;
+  }
 }

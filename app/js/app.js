@@ -43,4 +43,21 @@ $(document).ready(function () {
 
         return false;
     });
+
+    $('.user-info-more').click(function (e) {
+        e.preventDefault();
+
+        var that = $(this),
+            openPopup = $(that.attr('href'));
+
+        if(openPopup.hasClass('active') !== false) {
+            openPopup.removeClass('active');
+            openPopup.slideToggle();
+        } else {
+            openPopup.addClass('active');
+            openPopup.slideToggle();
+        }
+
+        return false;
+    });
 });

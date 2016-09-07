@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="bower_components/uikit/css/uikit.min.css">
     <link rel="stylesheet" href="bower_components/uikit/css/components/slider.min.css">
     <link rel="stylesheet" href="bower_components/uikit/css/components/slidenav.min.css">
+    <link rel="stylesheet" href="bower_components/uikit/css/components/sticky.min.css">
     <!--endbower-->
     <!--endbuild-->
 
@@ -162,7 +163,7 @@
     <section class="content-section section">
         <div class="uk-container uk-container-center -boxed">
             <div class="uk-grid uk-grid-large" data-uk-grid-margin>
-                <aside class="uk-width-small-1-1 uk-width-medium-2-3">
+                <aside class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-3-4">
                     <h2 class="title-text">Мышечная память: почему вернуть свою прежнюю форму проще, чем строить её с нуля (H1)</h2>
                     <p class="title-text-small -margin-top-20 -margin-bottom-20">Травма или длительный перерыв в тренировках — не повод забыть о своих былых рекордах. Вот адаптация и перевод статьи о том как мышечная память и выносливость помогают человеку снова и снова возвращаться в спорт, каждый раз превосходя себя-прежнего.</p>
                     <img src="images/single-page-img.jpg" alt="">
@@ -176,118 +177,51 @@
                     <p class="-font-italic -margin-top-20">Алекс Хатчинсон, бывший физик и бегун</p>
                     <h2 class="title-text-smaller -margin-top-20">Заголовок H2</h2>
 
-                    <div class="uk-overflow-container -margin-top-20">
-                        <table class="uk-table uk-table-hover">
-                            <thead>
-                            <tr>
-                                <th>Место</th>
-                                <th>Статус</th>
-                                <th>Атлет</th>
-                                <th>Пол</th>
-                                <th>Возраст</th>
-                                <th>Лучшее время</th>
-                                <th>Темп</th>
-                                <th>Мероприятий</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>МСМК</td>
-                                <td>Kimetto Dennis</td>
-                                <td>М</td>
-                                <td>31</td>
-                                <td>02:02:57</td>
-                                <td>2:54</td>
-                                <td>1</td>
-                            </tr>
-                            </tbody>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>МСМК</td>
-                                <td>Kimetto Dennis</td>
-                                <td>М</td>
-                                <td>31</td>
-                                <td>02:02:57</td>
-                                <td>2:54</td>
-                                <td>1</td>
-                            </tr>
-                            </tbody>
-                            <tbody class="table-info">
-                            <tr>
-                                <td>1</td>
-                                <td>МСМК</td>
-                                <td>Kimetto Dennis</td>
-                                <td>М</td>
-                                <td>31</td>
-                                <td>02:02:57</td>
-                                <td>2:54</td>
-                                <td>1</td>
-                            </tr>
-                            <tr class="table-info-full">
-                                <td></td>
-                                <td colspan="7">
-                                    <p>1 прошедшее соревнование</p>
-                                    <p><span>STANDARD CHARTERED DUBAI MARATHON, 24 JANUARY 2014</span></p>
-                                </td>
-                            </tr>
-                            </tbody>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>МСМК</td>
-                                <td>Kimetto Dennis</td>
-                                <td>М</td>
-                                <td>31</td>
-                                <td>02:02:57</td>
-                                <td>2:54</td>
-                                <td>1</td>
-                            </tr>
-                            </tbody>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>МСМК</td>
-                                <td>Kimetto Dennis</td>
-                                <td>М</td>
-                                <td>31</td>
-                                <td>02:02:57</td>
-                                <td>2:54</td>
-                                <td>1</td>
-                            </tr>
-                            </tbody>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>МСМК</td>
-                                <td>Kimetto Dennis</td>
-                                <td>М</td>
-                                <td>31</td>
-                                <td>02:02:57</td>
-                                <td>2:54</td>
-                                <td>1</td>
-                            </tr>
-                            </tbody>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>МСМК</td>
-                                <td>Kimetto Dennis</td>
-                                <td>М</td>
-                                <td>31</td>
-                                <td>02:02:57</td>
-                                <td>2:54</td>
-                                <td>1</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <div class="users-info-table uk-overflow -margin-top-20 -margin-bottom-20">
+                        <ul class="user-info-header">
+                            <li class="hidden-xs">Место</li>
+                            <li class="uk-hidden-small">Статус</li>
+                            <li class="larger">Атлет</li>
+                            <li class="uk-hidden-small">Пол</li>
+                            <li class="uk-visible-large">Возраст</li>
+                            <li class="larger"><p class="uk-visible-large">Лучшее время</p></li>
+                            <li class="uk-visible-large">Темп</li>
+                            <li class="uk-visible-large"><p class="">Мероприятий</p></li>
+                        </ul>
+                            <ul class="user-info user-info-more" href="#user--1">
+                                <li class="hidden-xs">1</li>
+                                <li class="uk-hidden-small">МСМК</li>
+                                <li class="larger">Kimetto Dennis</li>
+                                <li class="uk-hidden-small">М</li>
+                                <li class="uk-visible-large">31</li>
+                                <li class="larger">
+                                    <p class="uk-visible-large">02:02:57</p>
+                                    <p class="uk-hidden-large button-block"><a href="#user--1" class="uk-button uk-button-danger user-info-more">Подробнее</a></p>
+                                </li>
+                                <li class="uk-visible-large">2:54</li>
+                                <li class="uk-visible-large">1</li>
+                                <li id="user--1" class="description">
+                                    <div class="toggled-info">
+                                        <div class="description-small">
+                                            <p class="visible-xs">Место: 1</p>
+                                            <p class="uk-visible-small">Статус: МСМК</p>
+                                            <p class="uk-hidden-large">Возраст: 31</p>
+                                            <p class="uk-hidden-large">Лучшее время: 02:02:57</p>
+                                            <p class="uk-hidden-large">Темп: 2:54</p>
+                                            <hr>
+                                        </div>
+                                        <p class="uk-hidden-large">Мероприятий: </p>
+                                        <p>1 прошедшее соревнование</p>
+                                        <p><span>STANDARD CHARTERED DUBAI MARATHON, 24 JANUARY 2014</span></p>
+                                    </div>
+                                </li>
+                            </ul>
                     </div>
                     <div class="-margin-top-20">
                         <a href="#subscribe" class="uk-button uk-button-danger" data-uk-modal>Подписаться</a>
                     </div>
                 </aside>
-                <aside class="uk-width-small-1-1 uk-width-medium-1-3">
+                <aside class="uk-visible-large uk-width-large-1-4">
                     <div class="uk-panel uk-text-center">
                         <img src="images/advertize.png" alt="">
                     </div>
@@ -411,6 +345,7 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/uikit/js/uikit.min.js"></script>
 <script src="bower_components/uikit/js/components/slider.min.js"></script>
+<script src="bower_components/uikit/js/components/sticky.min.js"></script>
 <!--endbower-->
 <!--endbuild-->
 

@@ -25,58 +25,6 @@ a
     color: $red
     text-decoration: underline
 
-.uk-table
-  tbody
-    tr
-      td
-        span
-          color: $red
-    &:not(.table-info)
-      tr
-        &:hover
-          background: $red
-
-          td
-            color: #fff
-            span
-              color: #fff
-
-    &.table-info
-      background: #f8f8f8
-
-      tr
-        td
-          line-height: 1.5
-          padding-bottom: 10px
-
-        &:not(.table-info-full)
-          td
-            font-family: 'pf_dindisplay_promedium', serif
-            line-height: 1.5
-
-        &:hover
-          background: #f8f8f8
-
-          td
-            color: $dark
-            span
-              color: $red
-
-
-  th, td
-    line-height: 1.5
-    padding: 10px 15px
-    font-family: 'pf_dindisplay_prolight', serif
-    font-size: 14px
-
-  thead
-    tr
-      background: #f8f8f8
-
-
-      th
-        font-family: 'pf_dindisplay_proregular', serif
-
 .uk-button
   font-family: 'pf_dindisplay_prolight', serif
   padding: 0 25px
@@ -130,6 +78,7 @@ a
 .site-wrapper
   max-width: 100%
   overflow: hidden
+  min-width: 320px
 
 .section
   padding: 120px 0
@@ -895,6 +844,94 @@ a
         font-size: 10px
         top: 5px
         left: 0
+
+.users-info-table
+  ul
+    font-size: 0
+    li
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      font-size: 14px
+      display: inline-block
+      font-family: 'pf_dindisplay_prolight', serif
+      line-height: 1.5
+      padding: 10px 15px
+      width: 10%
+
+      @media only screen and (max-width : 767px)
+        padding: 10px 15px 10px 0
+
+      @media only screen and (max-width : 480px)
+        width: 15%
+
+      .button-block
+        text-align: right
+
+      .uk-button
+        line-height: 30px
+        font-size: 14.54px
+
+      &.larger
+        width: 20%
+        @media only screen and (max-width : 959px)
+          width: 35%
+
+        @media only screen and (max-width : 767px)
+          width: 45%
+
+          @media only screen and (max-width : 480px)
+            width: 42.5%
+
+          @media only screen and (max-width : 420px)
+            width: 50%
+
+      &.description
+        width: 100%
+        padding-left: 10%
+        position: relative
+        overflow: hidden
+        display: none
+
+        > .toggled-info
+          margin-left: 15px
+
+          @media only screen and (max-width : 767px)
+            margin-left: 0
+
+        @media only screen and (max-width : 480px)
+          padding-left: 15%
+
+        @media only screen and (max-width : 420px)
+          padding-left: 0
+
+        .description-small
+          font-size: 0
+          p
+            font-size: 14px
+            margin: 5px 0
+            width: 50%
+            display: inline-block
+
+            @media only screen and (max-width : 480px)
+              width: 100%
+
+    &.user-info-header
+      li
+        font-family: 'pf_dindisplay_probold', serif
+        font-size: 15px
+
+.hidden-xs
+
+  @media only screen and (max-width : 420px)
+    display: none!important
+
+.visible-xs
+  display: none!important
+
+  @media only screen and (max-width : 420px)
+    display: block!important
+
 
 
 
