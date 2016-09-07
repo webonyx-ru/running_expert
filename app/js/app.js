@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    var globHeaderHeight = $('.header-section').outerHeight();
+    var headerSection = $('.header-section'),
+        globHeaderHeight = headerSection.outerHeight();
+
 
     $('.menu-btn, .main-menu-btn').click(function (event) {
         event.preventDefault();
@@ -18,6 +20,7 @@ $(document).ready(function () {
                 'min-height': maxHeight + 50,
                 'max-height': 807
             });
+
         } else {
 
             $('.header-section').css({
@@ -40,6 +43,8 @@ $(document).ready(function () {
             'min-height': 100,
             'max-height': globHeaderHeight
         });
+
+        $('.header-wrapper-div').height(globHeaderHeight);
 
         return false;
     });

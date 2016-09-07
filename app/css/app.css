@@ -755,6 +755,12 @@ a {
   font-family: "pf_dindisplay_prothin", serif;
 }
 
+.site-other {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
+
 .header-section {
   max-height: 170px;
   min-height: 100px;
@@ -762,6 +768,9 @@ a {
   position: relative;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 .header-section .header-bg-blurred {
   background-image: url('../images/header-bg.jpg?1473162346');
@@ -780,6 +789,8 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
+  background-attachment: fixed;
+  transition: all 0.3s ease-in-out;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .header-section .header-bg-blurred {
