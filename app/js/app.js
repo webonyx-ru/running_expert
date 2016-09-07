@@ -63,7 +63,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         var that = $(this),
-            openPopup = $(that.attr('href'));
+            openPopup = $(that.attr('data-to'));
 
         if(openPopup.hasClass('active') !== false) {
             openPopup.removeClass('active');

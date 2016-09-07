@@ -253,9 +253,24 @@ a
     background: none
     border: none
     cursor: pointer
+    position: relative
 
     &:hover
       text-decoration: none
+
+    &.active
+      &::before
+        display: inline-block
+        width: 10px
+        height: 10px
+        content: ''
+        background: $red
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+        position: absolute
+        left: -17px
+        top: 7px
 
   .header-info-cont
     position: relative
@@ -863,8 +878,13 @@ a
         left: 0
 
 .users-info-table
+  overflow: hidden
+
   ul
     font-size: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
     li
       -webkit-box-sizing: border-box
       -moz-box-sizing: border-box
@@ -888,6 +908,9 @@ a
       .uk-button
         line-height: 30px
         font-size: 14.54px
+        background: $red
+        color: #fff
+        transition: all 0.3s ease-in-out
 
       &.larger
         width: 20%
@@ -937,6 +960,23 @@ a
       li
         font-family: 'pf_dindisplay_probold', serif
         font-size: 15px
+
+  .user-info
+    cursor: pointer
+
+    &:hover
+      background: $red
+
+      li
+        color: #fff
+
+        .uk-button
+          background: #fff
+          color: $dark
+
+        &.description
+          background: #fff
+          color: $dark
 
 .hidden-xs
 

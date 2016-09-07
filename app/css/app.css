@@ -910,9 +910,23 @@ a {
   background: none;
   border: none;
   cursor: pointer;
+  position: relative;
 }
 .header-section .menu-btn:hover {
   text-decoration: none;
+}
+.header-section .menu-btn.active::before {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background: #ff283c;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -17px;
+  top: 7px;
 }
 .header-section .header-info-cont {
   position: relative;
@@ -1570,8 +1584,14 @@ a {
   left: 0;
 }
 
+.users-info-table {
+  overflow: hidden;
+}
 .users-info-table ul {
   font-size: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .users-info-table ul li {
   -webkit-box-sizing: border-box;
@@ -1600,6 +1620,9 @@ a {
 .users-info-table ul li .uk-button {
   line-height: 30px;
   font-size: 14.54px;
+  background: #ff283c;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 .users-info-table ul li.larger {
   width: 20%;
@@ -1667,6 +1690,23 @@ a {
 .users-info-table ul.user-info-header li {
   font-family: "pf_dindisplay_probold", serif;
   font-size: 15px;
+}
+.users-info-table .user-info {
+  cursor: pointer;
+}
+.users-info-table .user-info:hover {
+  background: #ff283c;
+}
+.users-info-table .user-info:hover li {
+  color: #fff;
+}
+.users-info-table .user-info:hover li .uk-button {
+  background: #fff;
+  color: #232323;
+}
+.users-info-table .user-info:hover li.description {
+  background: #fff;
+  color: #232323;
 }
 
 @media only screen and (max-width: 420px) {
