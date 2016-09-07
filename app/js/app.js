@@ -2,6 +2,16 @@ $(document).ready(function () {
     var headerSection = $('.header-section'),
         globHeaderHeight = headerSection.outerHeight();
 
+    $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+
+        if(scrollTop > 100) {
+            $('.header-bg-blurred').addClass('make-blur');
+        } else {
+            $('.header-bg-blurred').removeClass('make-blur');
+        }
+    });
+
 
     $('.menu-btn, .main-menu-btn').click(function (event) {
         event.preventDefault();
