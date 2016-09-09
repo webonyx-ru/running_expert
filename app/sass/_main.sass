@@ -20,10 +20,35 @@ a
 .link
   color: $red
   text-decoration: none
+  transition: all .5s ease-in-out
 
   &:hover
     color: $red
     text-decoration: underline
+
+.link-red
+  text-decoration: none
+  *
+    &:hover
+      color: $red
+      text-decoration: none
+  &:hover
+    color: $red
+    text-decoration: none
+
+.link-bg-red
+  text-decoration: none
+
+  *
+    &:hover
+      color: #fff
+      background: $red!important
+      text-decoration: none
+
+  &:hover
+    color: #fff
+    background: $red
+    text-decoration: none
 
 .uk-button
   font-family: 'pf_dindisplay_prolight', serif
