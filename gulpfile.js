@@ -56,6 +56,6 @@ gulp.task('bower', function () {
 
 
 // watch
-gulp.task('bower', function () {
+gulp.task('watch', function () {
     gulp.watch('bower.json', ["bower"]);
 })

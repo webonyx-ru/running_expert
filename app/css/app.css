@@ -249,7 +249,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .fri-desktop-dark {
     background-image: url('../images/icons-2x-s7211d7f066.png');
     background-size: 600px auto;
-    background-position: 0 -473px;
+    background-position: 0 -472px;
     height: 55px;
     width: 56px;
   }
@@ -369,7 +369,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .fri-book-dark {
     background-image: url('../images/icons-2x-s7211d7f066.png');
     background-size: 600px auto;
-    background-position: 0 -233px;
+    background-position: 0 -232px;
     height: 45px;
     width: 47px;
   }
@@ -409,7 +409,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .fri-facebook {
     background-image: url('../images/icons-2x-s7211d7f066.png');
     background-size: 600px auto;
-    background-position: 0 -680px;
+    background-position: 0 -679px;
     height: 34px;
     width: 34px;
   }
@@ -429,7 +429,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .fri-vk {
     background-image: url('../images/icons-2x-s7211d7f066.png');
     background-size: 600px auto;
-    background-position: 0 -1074px;
+    background-position: 0 -1073px;
     height: 34px;
     width: 34px;
   }
@@ -449,7 +449,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .fri-twitter {
     background-image: url('../images/icons-2x-s7211d7f066.png');
     background-size: 600px auto;
-    background-position: 0 -997px;
+    background-position: 0 -996px;
     height: 34px;
     width: 34px;
   }
@@ -469,7 +469,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .fri-bars {
     background-image: url('../images/icons-2x-s7211d7f066.png');
     background-size: 600px auto;
-    background-position: 0 -205px;
+    background-position: 0 -204px;
     height: 23px;
     width: 30px;
   }
@@ -609,7 +609,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .fri-paper-dark {
     background-image: url('../images/icons-2x-s7211d7f066.png');
     background-size: 600px auto;
-    background-position: 0 -826px;
+    background-position: 0 -825px;
     height: 98px;
     width: 67px;
   }
@@ -684,6 +684,11 @@ a {
   color: #fff;
   background: #ff283c !important;
   text-decoration: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
 }
 .link-bg-red:hover {
   color: #fff;
@@ -800,7 +805,7 @@ a {
   z-index: 1;
 }
 .header-section .header-bg-blurred {
-  background-image: url('../images/header-bg.jpg?1473419209');
+  background-image: url('../images/header-bg.jpg?1473052476');
   background-size: contain;
   background-size: 1200px 800px;
   background-size: cover;
@@ -821,7 +826,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .header-section .header-bg-blurred {
-    background-image: url('../images/header-bg@2x.jpg?1473419209');
+    background-image: url('../images/header-bg@2x.jpg?1473052476');
   }
 }
 .header-section .header-bg-blurred .uk-slidenav-position {
@@ -1079,7 +1084,7 @@ a {
 }
 
 .logo {
-  background-image: url('../images/logo.png?1473419209');
+  background-image: url('../images/logo.png?1473052476');
   background-size: contain;
   background-size: 137.5px 37px;
   width: 137.5px;
@@ -1089,7 +1094,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .logo {
-    background-image: url('../images/logo@2x.png?1473419209');
+    background-image: url('../images/logo@2x.png?1473052476');
   }
 }
 
@@ -1281,6 +1286,10 @@ a {
   font-size: 0;
   line-height: 0;
 }
+.journal-section .uk-article .article-image-wrap > a {
+  display: block;
+  width: 100%;
+}
 .journal-section .uk-article .article-image-wrap .article-small-info {
   background: #fff;
   font-size: 12px;
@@ -1368,7 +1377,7 @@ a {
   float: left;
 }
 .footer-section .footer-info .logo-footer {
-  background-image: url('../images/logo-small.png?1473419209');
+  background-image: url('../images/logo-small.png?1473052476');
   background-size: contain;
   background-size: 19.5px 21px;
   width: 19.5px;
@@ -1378,7 +1387,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .footer-section .footer-info .logo-footer {
-    background-image: url('../images/logo-small@2x.png?1473419209');
+    background-image: url('../images/logo-small@2x.png?1473052476');
   }
 }
 .footer-section .footer-info .footer-info-text {
@@ -1514,7 +1523,7 @@ a {
 }
 
 .price-list-bg {
-  background-image: url('../images/pricelist-bg.jpg?1473419209');
+  background-image: url('../images/pricelist-bg.jpg?1473052476');
   background-size: contain;
   background-size: 1200px 668px;
   background-size: cover;
@@ -1524,7 +1533,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .price-list-bg {
-    background-image: url('../images/pricelist-bg@2x.jpg?1473419209');
+    background-image: url('../images/pricelist-bg@2x.jpg?1473052476');
   }
 }
 .price-list-bg .pricelist-img {
