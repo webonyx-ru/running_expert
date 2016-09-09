@@ -582,21 +582,36 @@ a
       width: 100%
       text-align: center
 
-    .uk-article-title
+    .article-small-info-wrap
+      bottom: 10px
+      left: 10px
+      z-index: 1
+      position: absolute
+
+      li
+        display: inline-block
+        margin-right: 5px
+
+        &:last-child
+          margin-right: 0
+
+    .article-image-wrap
       position: relative
       max-height: 175px
+      font-size: 0
+      line-height: 0
 
       .article-small-info
-        position: absolute
         background: #fff
         font-size: 12px
         font-family: 'pf_dindisplay_probold', serif
         padding: 5px 10px
         border-radius: 15px
-        bottom: 10px
-        left: 10px
-        z-index: 1
         line-height: 12px
+        color: #232323
+
+        &:hover
+          color: #fff
 
     .uk-article-lead
       font-family: 'pf_dindisplay_promedium', serif
@@ -839,6 +854,12 @@ a
     padding: 0
 
 .article-grid
+  .article-image-wrap
+    font-size: 0
+    line-height: 0
+    img
+      width: 100%
+
   .uk-article-title
     img
       width: 100%

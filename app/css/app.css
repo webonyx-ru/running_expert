@@ -1262,21 +1262,36 @@ a {
     text-align: center;
   }
 }
-.journal-section .uk-article .uk-article-title {
+.journal-section .uk-article .article-small-info-wrap {
+  bottom: 10px;
+  left: 10px;
+  z-index: 1;
+  position: absolute;
+}
+.journal-section .uk-article .article-small-info-wrap li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.journal-section .uk-article .article-small-info-wrap li:last-child {
+  margin-right: 0;
+}
+.journal-section .uk-article .article-image-wrap {
   position: relative;
   max-height: 175px;
+  font-size: 0;
+  line-height: 0;
 }
-.journal-section .uk-article .uk-article-title .article-small-info {
-  position: absolute;
+.journal-section .uk-article .article-image-wrap .article-small-info {
   background: #fff;
   font-size: 12px;
   font-family: "pf_dindisplay_probold", serif;
   padding: 5px 10px;
   border-radius: 15px;
-  bottom: 10px;
-  left: 10px;
-  z-index: 1;
   line-height: 12px;
+  color: #232323;
+}
+.journal-section .uk-article .article-image-wrap .article-small-info:hover {
+  color: #fff;
 }
 .journal-section .uk-article .uk-article-lead {
   font-family: "pf_dindisplay_promedium", serif;
@@ -1547,6 +1562,13 @@ a {
   padding: 0;
 }
 
+.article-grid .article-image-wrap {
+  font-size: 0;
+  line-height: 0;
+}
+.article-grid .article-image-wrap img {
+  width: 100%;
+}
 .article-grid .uk-article-title img {
   width: 100%;
 }
