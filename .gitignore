@@ -3,3 +3,4 @@
 app/bower_components
 app/Desktop
 dist
+node_modules
