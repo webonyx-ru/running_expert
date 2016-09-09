@@ -31,7 +31,6 @@ gulp.task('build',["clean"], function(){
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
-        // .pipe("app/fonts/**/*")
         .pipe(useref())
         .pipe(gulp.dest('dist'));
 
@@ -44,7 +43,7 @@ gulp.task('build',["clean"], function(){
     gulp.src("app/img/**/*")
         .pipe(gulp.dest('dist/img'));
 
-})
+});
 
 // Bower
 gulp.task('bower', function () {
